@@ -13,6 +13,10 @@ class Dosen extends Seeder
                 'nip' => 2121345,
                 'nama' => 'reyhan mahmudi  S.kom.,M.kom'
             ],
+            [
+                'nip' => 211134,
+                'nama' => 'Rahman'
+            ]
             ];
 
         $this->db->table('tabel_dosen')->insertBatch($data);

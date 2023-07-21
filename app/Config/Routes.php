@@ -33,7 +33,7 @@ $routes->set404Override();
 //Jadwal 
 $routes->get('/', 'Admin\JadwalController::index');
 $routes->get('/Jadwal/tambah-jadwal','Admin\JadwalController::tambahJadwal');
-$routes->get('/jadwal','Admin\JadwalController::index');
+$routes->get('/jadwal','Admin\JadwalController::index',['filter' => 'login']);
 $routes->get('/Jadwal/delete-jadwal/(:num)','Admin\JadwalController::deleteJadwal/$1');
 $routes->get('/Jadwal/edit-jadwal/(:num)','Admin\JadwalController::editJadwal/$1');
 $routes->get('/Jadwal/viewDetail/(:num)','Admin\JadwalController::viewDetail/$1');

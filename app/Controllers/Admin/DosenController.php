@@ -25,7 +25,7 @@ class DosenController extends BaseController{
             'nama' => $this->request->getPost('nama'),
         ];
         $model->insert($data);
-
+        //echo "berhasil";
         return redirect()->to('Dosen/dosen');
     }
     }
